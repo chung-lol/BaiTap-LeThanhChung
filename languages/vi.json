@@ -1,0 +1,4 @@
+{
+  "ios": { "CFBundleDisplayName": "Quản lý Sinh viên" },
+  "android": { "app_name": "Quản lý Sinh viên" }
+}

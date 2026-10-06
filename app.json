@@ -1,13 +1,20 @@
 {
   "expo": {
-    "name": "MyApp",
+    "name": "Student Manager",
     "slug": "MyApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "locales": {
+      "vi": "./languages/vi.json",
+      "en": "./languages/en.json"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "CFBundleAllowMixedLocalizations": true
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -19,6 +26,17 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-localization",
+        {
+          "supportedLocales": {
+            "ios": ["en", "vi"],
+            "android": ["en", "vi"]
+          }
+        }
+      ]
+    ]
   }
 }
